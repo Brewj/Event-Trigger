@@ -8,7 +8,7 @@ pfd = pifacedigitalio.PiFaceDigital()
 pfd.leds[5].turn_on() #Room light ON
 
 def toggle_led0(event):
-	subprocess.call("./goshow.sh", shell=True)
+	subprocess.call("/home/pi/goshow.sh", shell=True)
 	
 pifacedigital = pifacedigitalio.PiFaceDigital()
 listener = pifacedigitalio.InputEventListener(chip=pifacedigital)
